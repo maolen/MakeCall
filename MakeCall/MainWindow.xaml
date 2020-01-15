@@ -7,8 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Name="makeCallButton" Click="MakeCall" Content="Call" HorizontalAlignment="Left" Margin="252,230,0,0" VerticalAlignment="Top" Width="253"/>
-        <TextBox Name="addressTextBox" HorizontalAlignment="Left" Height="23" Margin="252,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="253"/>
+        <Button x:Name="Call" Content="Позвонить" Click="CallClick" Width="170" Margin="311,184,311,209"/>
+        <TextBox Name="connectPortTB" HorizontalAlignment="Left" Height="23" Margin="312,50,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="170"/>
+        <TextBox x:Name="listenPortTB" HorizontalAlignment="Left" Height="23" Margin="312,90,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="170"/>
+        <TextBox x:Name="ipAddressTB" HorizontalAlignment="Left" Height="23" Margin="312,131,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="170"/>
+        <Label Content="Порт исходящих вызовов" HorizontalAlignment="Left" Margin="144,136,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.722,-0.617"/>
+        <Label Content="Порт входящих вызовов" HorizontalAlignment="Left" Margin="144,95,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.38,-1.93"/>
+        <Label Content="IP адрес" HorizontalAlignment="Left" Margin="144,47,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
